@@ -3,154 +3,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Modèles de personnalité</title>
+  <title>Personality Guesser</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="hero">
     <nav class="navbar">
-      <h1 class="logo">Personality Models</h1>
+      <h1 class="logo">Personality Guesser</h1>
       <ul class="nav-links">
-        <li><a href="#home">Accueil</a></li>
-        <li><a href="#models">Modèles</a></li>
-        <li><a href="#compare">Comparaison</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#models">Models</a></li>
+        <li><a href="#test">Test</a></li>
+        <li><a href="#results">Results</a></li>
       </ul>
     </nav>
 
     <div class="hero-content" id="home">
-      <h2>Les principaux modèles de personnalité</h2>
+      <h2>Discover your personality across different models</h2>
       <p>
-        Découvrez 6 modèles importants : MBTI, OCEAN, DISC, Ennéagramme,
-        4 Tempéraments et IA.
+        Answer a few simple questions and get an estimated profile in MBTI,
+        OCEAN, DISC, Enneagram and 4 Temperaments.
       </p>
-      <a href="#models" class="btn">Découvrir</a>
+      <a href="#test" class="btn">Start the test</a>
     </div>
   </header>
 
   <main>
     <section class="section" id="models">
-      <h2 class="section-title">Les 6 modèles</h2>
+      <h2 class="section-title">Models included</h2>
       <div class="cards">
-
         <div class="card">
           <h3>MBTI</h3>
-          <p>
-            Classe les personnes en 16 types selon 4 dimensions psychologiques.
-          </p>
-          <button class="more-btn" onclick="showInfo('mbti')">Voir plus</button>
+          <p>Estimate your type like INTJ, ENFP, ISTP and more.</p>
         </div>
-
         <div class="card">
           <h3>OCEAN</h3>
-          <p>
-            Modèle scientifique basé sur 5 grands traits de personnalité.
-          </p>
-          <button class="more-btn" onclick="showInfo('ocean')">Voir plus</button>
+          <p>See your levels in openness, conscientiousness, extraversion, agreeableness and neuroticism.</p>
         </div>
-
         <div class="card">
           <h3>DISC</h3>
-          <p>
-            Analyse le comportement selon 4 grands profils relationnels.
-          </p>
-          <button class="more-btn" onclick="showInfo('disc')">Voir plus</button>
+          <p>Find your dominant behavior style: D, I, S or C.</p>
         </div>
-
         <div class="card">
-          <h3>Ennéagramme</h3>
-          <p>
-            Décrit 9 types centrés sur les motivations, peurs et désirs.
-          </p>
-          <button class="more-btn" onclick="showInfo('enneagramme')">Voir plus</button>
+          <h3>Enneagram</h3>
+          <p>Get a simple guess of your Enneagram type.</p>
         </div>
-
         <div class="card">
-          <h3>4 Tempéraments</h3>
-          <p>
-            Modèle ancien qui regroupe les personnalités en 4 tempéraments.
-          </p>
-          <button class="more-btn" onclick="showInfo('temperaments')">Voir plus</button>
+          <h3>4 Temperaments</h3>
+          <p>Discover whether you are more sanguine, choleric, melancholic or phlegmatic.</p>
         </div>
-
-        <div class="card">
-          <h3>IA</h3>
-          <p>
-            Analyse moderne de la personnalité à partir de données et comportements.
-          </p>
-          <button class="more-btn" onclick="showInfo('ia')">Voir plus</button>
-        </div>
-
       </div>
     </section>
 
-    <section class="section details-section">
-      <h2 class="section-title">Détails du modèle</h2>
-      <div id="info-box" class="info-box">
-        Cliquez sur <strong>Voir plus</strong> pour afficher les détails d’un modèle.
-      </div>
-    </section>
+    <section class="section test-section" id="test">
+      <h2 class="section-title">Personality Test</h2>
 
-    <section class="section" id="compare">
-      <h2 class="section-title">Comparaison rapide</h2>
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>Modèle</th>
-              <th>But principal</th>
-              <th>Type d’analyse</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>MBTI</td>
-              <td>Classer en types</td>
-              <td>16 types</td>
-            </tr>
-            <tr>
-              <td>OCEAN</td>
-              <td>Mesurer les traits</td>
-              <td>5 traits</td>
-            </tr>
-            <tr>
-              <td>DISC</td>
-              <td>Comprendre le comportement</td>
-              <td>4 profils</td>
-            </tr>
-            <tr>
-              <td>Ennéagramme</td>
-              <td>Comprendre les motivations</td>
-              <td>9 types</td>
-            </tr>
-            <tr>
-              <td>4 Tempéraments</td>
-              <td>Décrire le tempérament naturel</td>
-              <td>4 profils</td>
-            </tr>
-            <tr>
-              <td>IA</td>
-              <td>Analyser via les données</td>
-              <td>Analyse moderne</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+      <form id="quiz-form" class="quiz-form">
+        <div class="question">
+          <h3>1. In a social event, you usually...</h3>
+          <label><input type="radio" name="q1" value="a" required> Talk to many people and feel energized</label>
+          <label><input type="radio" name="q1" value="b"> Prefer a few people and quiet interactions</label>
+        </div>
 
-    <section class="section" id="contact">
-      <h2 class="section-title">Contact</h2>
-      <form class="contact-form">
-        <input type="text" placeholder="Votre nom" required />
-        <input type="email" placeholder="Votre email" required />
-        <textarea placeholder="Votre message" rows="5" required></textarea>
-        <button type="submit" class="btn">Envoyer</button>
+        <div class="question">
+          <h3>2. When solving a problem, you rely more on...</h3>
+          <label><input type="radio" name="q2" value="a" required> Facts, details and what is concrete</label>
+          <label><input type="radio" name="q2" value="b"> Ideas, patterns and possibilities</label>
+        </div>
+
+        <div class="question">
+          <h3>3. In decisions, you are usually more guided by...</h3>
+          <label><input type="radio" name="q3" value="a" required> Logic and objective analysis</label>
+          <label><input type="radio" name="q3" value="b"> Values and people’s feelings</label>
+        </div>
+
+        <div class="question">
+          <h3>4. In your daily life, you prefer...</h3>
+          <label><input type="radio" name="q4" value="a" required> Planning and structure</label>
+          <label><input type="radio" name="q4" value="b"> Flexibility and spontaneity</label>
+        </div>
+
+        <div class="question">
+          <h3>5. At work or in projects, you are usually...</h3>
+          <label><input type="radio" name="q5" value="a" required> Assertive, direct and focused on results</label>
+          <label><input type="radio" name="q5" value="b"> Friendly, expressive and motivating</label>
+        </div>
+
+        <div class="question">
+          <h3>6. In your rhythm of life, you are more often...</h3>
+          <label><input type="radio" name="q6" value="a" required> Calm, patient and steady</label>
+          <label><input type="radio" name="q6" value="b"> Careful, reserved and analytical</label>
+        </div>
+
+        <div class="question">
+          <h3>7. Which sentence fits you better?</h3>
+          <label><input type="radio" name="q7" value="a" required> I like discovering new ideas and experiences</label>
+          <label><input type="radio" name="q7" value="b"> I prefer familiar methods that work well</label>
+        </div>
+
+        <div class="question">
+          <h3>8. Which sentence fits you better?</h3>
+          <label><input type="radio" name="q8" value="a" required> I am organized and dependable</label>
+          <label><input type="radio" name="q8" value="b"> I am more relaxed and flexible</label>
+        </div>
+
+        <div class="question">
+          <h3>9. Under pressure, you often...</h3>
+          <label><input type="radio" name="q9" value="a" required> Become stressed or overthink</label>
+          <label><input type="radio" name="q9" value="b"> Stay relatively emotionally stable</label>
+        </div>
+
+        <div class="question">
+          <h3>10. In relationships, people often describe you as...</h3>
+          <label><input type="radio" name="q10" value="a" required> Compassionate and cooperative</label>
+          <label><input type="radio" name="q10" value="b"> More blunt but honest and efficient</label>
+        </div>
+
+        <div class="question">
+          <h3>11. Deep down, what motivates you more?</h3>
+          <label><input type="radio" name="q11" value="a" required> Being successful and admired</label>
+          <label><input type="radio" name="q11" value="b"> Being safe, loyal and prepared</label>
+        </div>
+
+        <div class="question">
+          <h3>12. Which best describes your natural energy?</h3>
+          <label><input type="radio" name="q12" value="a" required> Optimistic, lively and enthusiastic</label>
+          <label><input type="radio" name="q12" value="b"> Serious, deep and thoughtful</label>
+        </div>
+
+        <button type="submit" class="btn">See my results</button>
       </form>
+    </section>
+
+    <section class="section results-section" id="results">
+      <h2 class="section-title">Your Results</h2>
+      <div id="results-box" class="results-box">
+        Complete the test to see your personality profile.
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 - Site simple sur les modèles de personnalité</p>
+    <p>© 2026 Personality Guesser - Simple HTML CSS JavaScript project</p>
   </footer>
 
   <script src="script.js"></script>
