@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modèles de personnalité</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <h1 class="logo">Personality Models</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#models">Modèles</a></li>
+        <li><a href="#compare">Comparaison</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content" id="home">
+      <h2>Les principaux modèles de personnalité</h2>
+      <p>
+        Découvrez 6 modèles importants : MBTI, OCEAN, DISC, Ennéagramme,
+        4 Tempéraments et IA.
+      </p>
+      <a href="#models" class="btn">Découvrir</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="models">
+      <h2 class="section-title">Les 6 modèles</h2>
+      <div class="cards">
+
+        <div class="card">
+          <h3>MBTI</h3>
+          <p>
+            Classe les personnes en 16 types selon 4 dimensions psychologiques.
+          </p>
+          <button class="more-btn" onclick="showInfo('mbti')">Voir plus</button>
+        </div>
+
+        <div class="card">
+          <h3>OCEAN</h3>
+          <p>
+            Modèle scientifique basé sur 5 grands traits de personnalité.
+          </p>
+          <button class="more-btn" onclick="showInfo('ocean')">Voir plus</button>
+        </div>
+
+        <div class="card">
+          <h3>DISC</h3>
+          <p>
+            Analyse le comportement selon 4 grands profils relationnels.
+          </p>
+          <button class="more-btn" onclick="showInfo('disc')">Voir plus</button>
+        </div>
+
+        <div class="card">
+          <h3>Ennéagramme</h3>
+          <p>
+            Décrit 9 types centrés sur les motivations, peurs et désirs.
+          </p>
+          <button class="more-btn" onclick="showInfo('enneagramme')">Voir plus</button>
+        </div>
+
+        <div class="card">
+          <h3>4 Tempéraments</h3>
+          <p>
+            Modèle ancien qui regroupe les personnalités en 4 tempéraments.
+          </p>
+          <button class="more-btn" onclick="showInfo('temperaments')">Voir plus</button>
+        </div>
+
+        <div class="card">
+          <h3>IA</h3>
+          <p>
+            Analyse moderne de la personnalité à partir de données et comportements.
+          </p>
+          <button class="more-btn" onclick="showInfo('ia')">Voir plus</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section details-section">
+      <h2 class="section-title">Détails du modèle</h2>
+      <div id="info-box" class="info-box">
+        Cliquez sur <strong>Voir plus</strong> pour afficher les détails d’un modèle.
+      </div>
+    </section>
+
+    <section class="section" id="compare">
+      <h2 class="section-title">Comparaison rapide</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Modèle</th>
+              <th>But principal</th>
+              <th>Type d’analyse</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>MBTI</td>
+              <td>Classer en types</td>
+              <td>16 types</td>
+            </tr>
+            <tr>
+              <td>OCEAN</td>
+              <td>Mesurer les traits</td>
+              <td>5 traits</td>
+            </tr>
+            <tr>
+              <td>DISC</td>
+              <td>Comprendre le comportement</td>
+              <td>4 profils</td>
+            </tr>
+            <tr>
+              <td>Ennéagramme</td>
+              <td>Comprendre les motivations</td>
+              <td>9 types</td>
+            </tr>
+            <tr>
+              <td>4 Tempéraments</td>
+              <td>Décrire le tempérament naturel</td>
+              <td>4 profils</td>
+            </tr>
+            <tr>
+              <td>IA</td>
+              <td>Analyser via les données</td>
+              <td>Analyse moderne</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Votre nom" required />
+        <input type="email" placeholder="Votre email" required />
+        <textarea placeholder="Votre message" rows="5" required></textarea>
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 - Site simple sur les modèles de personnalité</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
